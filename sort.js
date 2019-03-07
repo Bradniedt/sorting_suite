@@ -21,3 +21,10 @@ function check(array) {
   };
   return sorted;
 };
+
+function bubbleSort(array) {
+  while(check(array) == false) {
+    sortIt(array);
+  };
+  return array;
+};
