@@ -28,3 +28,22 @@ function bubbleSort(array) {
   };
   return array;
 };
+
+exports.sortMe = function testSort(array) {
+  while(check(array) == false) {
+    sortIt(array);
+  };
+  return array;
+};
+
+exports.check = function(array) {
+  sorted = true;
+  for(i = 0; i < array.length; i ++) {
+    var one = array[i];
+    var two = array[(i + 1)];
+    if(one > two) {
+      sorted = false;
+    };
+  };
+  return sorted;
+};

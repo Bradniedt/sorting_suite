@@ -1,5 +1,5 @@
 const assert = require('chai').assert
-const sorter = require('../sort')
+const sorter = require('../bubbleSort')
 
 describe('Sorting functionality', function() {
   context('bubbleSort', function() {
